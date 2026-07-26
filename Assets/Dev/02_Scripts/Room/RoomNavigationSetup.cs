@@ -39,6 +39,11 @@ namespace MyFriendDD.Room
 
         private bool _ready;
 
+        /// <summary>
+        /// 방 NavMesh가 준비되어 개/음성인식이 활성화되었는지 여부. 디버그 표시용.
+        /// </summary>
+        public bool IsReady => _ready;
+
         private void OnEnable()
         {
             if (sceneNavigation != null)

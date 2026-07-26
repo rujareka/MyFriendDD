@@ -1165,72 +1165,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1477872318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &161670101
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.9374154
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.0600007
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.1362256
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      propertyPath: m_Name
-      value: SK_GermanShepherd_01
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1658466582}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1658466581}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1658466580}
-  m_SourcePrefab: {fileID: 100100000, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
 --- !u!1 &174779182
 GameObject:
   m_ObjectHideFlags: 0
@@ -2991,6 +2925,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1319149234}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &536221393
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.67654
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.11823
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075254841230604974, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199300746748862704, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f802062704bb314418949f62ed62935b, type: 2}
+    - target: {fileID: 4248197375101405997, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      propertyPath: m_Name
+      value: P_GermanShepherd
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4248197375101405997, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1888731947}
+    - targetCorrespondingSourceObject: {fileID: 4248197375101405997, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1888731946}
+    - targetCorrespondingSourceObject: {fileID: 4248197375101405997, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1888731945}
+  m_SourcePrefab: {fileID: 100100000, guid: 2658abc5fee3a7548a90543920743983, type: 3}
 --- !u!1 &542609405
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,77 +9272,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -3.5085695, y: 0.08475034, z: -0.17565808}
     m_Extent: {x: 0.10651159, y: 0.18774159, z: 0.45612463}
   m_DirtyAABB: 0
---- !u!1 &1658466578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a6149f04780115a48b6bad836a1fe25b, type: 3}
-  m_PrefabInstance: {fileID: 161670101}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1658466580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658466578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0bbf5edbe9505d4286004a39d917327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyFriendDD.Dog.DogController
-  player: {fileID: 0}
-  stoppingDistance: 0.8
-  runSpeed: 3.5
-  walkSpeed: 1.5
-  runToPlayer: 1
-  angularSpeed: 360
-  acceleration: 8
-  idleStateName: 1 type_Idle Breathing
-  runStateName: 1 type_Run Loop
-  animationBlend: 0.15
---- !u!95 &1658466581
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658466578}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!195 &1658466582
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658466578}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &1669796649
 GameObject:
   m_ObjectHideFlags: 0
@@ -9488,14 +9421,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696243344}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 253acbd00cfcf4d4b87c69dce04813c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MyFriendDD.Voice.DogVoiceCommandHandler
-  callIntentName: call_dog
-  confidenceThreshold: 0.6
-  dog: {fileID: 1658466580}
+  commands: []
   keepListening: 1
 --- !u!114 &1696243346
 MonoBehaviour:
@@ -10183,7 +10114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MyFriendDD.Room.RoomNavigationSetup
   sceneNavigation: {fileID: 910955446}
-  dog: {fileID: 1658466580}
+  dog: {fileID: 0}
   voiceHandler: {fileID: 1696243345}
   snapDogToNavMesh: 1
   snapSearchRadius: 2
@@ -10500,6 +10431,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1628483016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1888731944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4248197375101405997, guid: 2658abc5fee3a7548a90543920743983, type: 3}
+  m_PrefabInstance: {fileID: 536221393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1888731945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888731944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bbf5edbe9505d4286004a39d917327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MyFriendDD.Dog.DogController
+  player: {fileID: 2114352288}
+  stoppingDistance: 0.8
+  runSpeed: 3.5
+  walkSpeed: 1.5
+  runToPlayer: 1
+  angularSpeed: 360
+  acceleration: 8
+  isMovingParam: IsMoving
+--- !u!95 &1888731946
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888731944}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f802062704bb314418949f62ed62935b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &1888731947
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888731944}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1892524401
 GameObject:
   m_ObjectHideFlags: 0
@@ -12128,8 +12128,8 @@ SceneRoots:
   - {fileID: 2114352288}
   - {fileID: 1613008643}
   - {fileID: 292073842}
-  - {fileID: 161670101}
   - {fileID: 1696243347}
   - {fileID: 380807967}
   - {fileID: 910955447}
   - {fileID: 1805948647}
+  - {fileID: 536221393}
