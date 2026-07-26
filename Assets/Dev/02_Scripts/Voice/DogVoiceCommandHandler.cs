@@ -89,6 +89,7 @@ namespace MyFriendDD.Voice
             {
                 if (command.intentName == intentName && confidence >= command.confidenceThreshold)
                 {
+                    Debug.Log($"[{nameof(DogVoiceCommandHandler)}] 인텐트 매칭됨: {command.intentName} (confidence={confidence:F2})");
                     command.onMatched?.Invoke();
                     return; // 한 번의 응답에 하나의 명령만 실행
                 }

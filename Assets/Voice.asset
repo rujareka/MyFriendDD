@@ -22,10 +22,13 @@ MonoBehaviour:
     isPrivate: 1
     createdAt: 2026-07-25T16:47:10-0700
     trainingStatus: 1
-    lastTrainDuration: 0
-    lastTrainedAt: 1969-12-31T16:00:00-0800
-    nextTrainAt: 1969-12-31T16:00:00-0800
-    intents: []
+    lastTrainDuration: 132
+    lastTrainedAt: 2026-07-26T07:43:07-0700
+    nextTrainAt: 2026-07-26T07:40:55-0700
+    intents:
+    - id: 2216744375841196
+      name: call_dog
+      entities: []
     entities: []
     traits: []
     versionTags: []
