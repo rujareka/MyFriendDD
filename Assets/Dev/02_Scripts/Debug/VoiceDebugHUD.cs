@@ -1,7 +1,6 @@
 using Meta.WitAi;
 using Meta.WitAi.Json;
 using MyFriendDD.Dog;
-using MyFriendDD.Room;
 using Oculus.Voice;
 using UnityEngine;
 
@@ -18,8 +17,6 @@ namespace MyFriendDD.Debugging
         [Header("References")]
         [SerializeField] private AppVoiceExperience voiceService;
         [SerializeField] private DogController dog;
-        [Tooltip("AR 방 스캔 게이팅을 쓰는 경우에만 연결 (안 쓰면 비워둬도 됨)")]
-        [SerializeField] private RoomNavigationSetup roomSetup;
 
         [Header("Options")]
         [SerializeField] private bool faceCamera = true;
@@ -109,14 +106,12 @@ namespace MyFriendDD.Debugging
         {
             bool micReady = voiceService != null;
             bool dogActive = dog != null && dog.enabled;
-            string navState = roomSetup == null ? "미사용" : (roomSetup.IsReady ? "준비됨" : "대기 중");
 
             _text.text =
                 $"Voice Service: {(micReady ? "연결됨" : "연결 안됨!")}\n" +
                 $"Mic: {_micState}\n" +
                 $"인식된 말: {_lastHeard}\n" +
                 $"Intent: {_lastIntent}\n" +
-                $"Room NavMesh: {navState}\n" +
                 $"Dog Active: {(dogActive ? "YES" : "no (비활성)")}";
         }
     }
