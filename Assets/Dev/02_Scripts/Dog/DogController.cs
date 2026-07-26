@@ -75,6 +75,13 @@ namespace MyFriendDD.Dog
                 return;
             }
 
+            if (!_agent.isOnNavMesh)
+            {
+                Debug.LogWarning($"[{nameof(DogController)}] NavMeshAgent가 아직 NavMesh 위에 있지 않습니다. " +
+                                  "(방 스캔/NavMesh 베이크가 끝났는지 확인하세요)", this);
+                return;
+            }
+
             _agent.isStopped = false;
             _agent.speed = runToPlayer ? runSpeed : walkSpeed;
             _agent.SetDestination(player.position);
