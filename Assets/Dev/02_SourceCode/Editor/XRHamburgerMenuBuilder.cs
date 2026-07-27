@@ -78,6 +78,19 @@ public static class XRHamburgerMenuBuilder
             dogFetchProp.objectReferenceValue = Object.FindFirstObjectByType<DogFetch>();
         }
 
+        var snackProp = so.FindProperty("snackPrefab");
+        if (snackProp.objectReferenceValue == null)
+        {
+            snackProp.objectReferenceValue =
+                AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Dev/03_PrePebs/Snack.prefab");
+        }
+
+        var dogEatProp = so.FindProperty("dogEat");
+        if (dogEatProp.objectReferenceValue == null)
+        {
+            dogEatProp.objectReferenceValue = Object.FindFirstObjectByType<DogEat>();
+        }
+
         so.ApplyModifiedProperties();
 
         EditorUtility.SetDirty(menu);

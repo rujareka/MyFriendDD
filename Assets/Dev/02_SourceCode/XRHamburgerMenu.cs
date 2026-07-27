@@ -39,6 +39,11 @@ public class XRHamburgerMenu : MonoBehaviour
     [SerializeField] private Vector3 ballSpawnOffset = new Vector3(0f, 0f, 0.6f); // 카메라 기준 우, 상, 앞 (m)
     [SerializeField] private DogFetch dogFetch; // 스폰된 공을 이 강아지가 쫓아가도록 연결
 
+    [Header("Snack 스폰")]
+    [SerializeField] private GameObject snackPrefab;
+    [SerializeField] private Vector3 snackSpawnOffset = new Vector3(0f, 0f, 0.6f); // 카메라 기준 우, 상, 앞 (m)
+    [SerializeField] private DogEat dogEat; // 스폰된 간식을 이 강아지가 먹으러 가도록 연결
+
     private bool dropdownOpen;
     private bool toolsOpen;
     private Coroutine dropdownAnim;
@@ -137,6 +142,11 @@ public class XRHamburgerMenu : MonoBehaviour
             CloseTools();
             SpawnTennisBall();
         }
+        else if (toolName == "Snack")
+        {
+            CloseTools();
+            SpawnSnack();
+        }
     }
 
     // ---------- 토글 / 애니메이션 ----------
@@ -187,6 +197,33 @@ public class XRHamburgerMenu : MonoBehaviour
             clonedBall.MarkAsLanded();
             if (dogFetch != null)
                 dogFetch.SetBall(clonedBall);
+        }
+    }
+
+    private void SpawnSnack()
+    {
+        if (snackPrefab == null)
+        {
+            Debug.LogError("[XRHamburgerMenu] Snack Prefab이 연결되지 않았습니다. " +
+                "인스펙터에서 Snack 프리팹을 드래그해 연결하세요.");
+            return;
+        }
+
+        Transform cam = headCamera != null ? headCamera : (Camera.main != null ? Camera.main.transform : null);
+        if (cam == null) return;
+
+        Vector3 spawnPos = cam.position
+            + cam.right * snackSpawnOffset.x
+            + cam.up * snackSpawnOffset.y
+            + cam.forward * snackSpawnOffset.z;
+        Quaternion spawnRot = Quaternion.LookRotation(cam.forward, Vector3.up);
+        GameObject clone = Instantiate(snackPrefab, spawnPos, spawnRot);
+
+        SnackItem clonedSnack = clone.GetComponent<SnackItem>();
+        if (clonedSnack != null && dogEat != null)
+        {
+            // 강아지는 플레이어가 이 간식을 손으로 집는 순간부터 쫓아간다 (SnackItem.IsHeld).
+            dogEat.SetSnack(clonedSnack);
         }
     }
 
