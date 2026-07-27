@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 
 /// <summary>
-/// 강아지 "이리 와" 로직. 컨트롤러 A버튼(기본값)을 누르면 대기 중인 강아지가
+/// 강아지 "이리 와" 로직. 키보드 위쪽 화살표를 누르면 대기 중인 강아지가
 /// 플레이어에게 걸어온다. 공 가져오기/간식 먹기 중에는 반응하지 않는다.
 ///
-/// 흐름: Idle(대기) -> A버튼 입력 -> Coming(플레이어에게 이동) -> 도착하면 다시 Idle.
+/// 흐름: Idle(대기) -> 위쪽 화살표 입력 -> Coming(플레이어에게 이동) -> 도착하면 다시 Idle.
 ///
 /// 애니메이션은 직접 고르시면 됩니다. 이 스크립트는 아래 Animator 파라미터만 사용(있으면):
 ///   Bool IsMoving - 이동 중 여부 (뛰는/걷는 애니메이션 블렌드용)
@@ -15,6 +16,9 @@ using UnityEngine.AI;
 /// 확인해서 동시에 NavMeshAgent 목적지를 다투지 않도록 한다.
 ///
 /// 이동 속도/회전 속도/가속도는 이 오브젝트의 NavMeshAgent 컴포넌트 값을 그대로 따른다.
+///
+/// 프로젝트의 Active Input Handling이 New Input System 전용(activeInputHandler: 1)이라
+/// 레거시 Input.GetKeyDown 대신 Keyboard.current를 사용한다.
 /// </summary>
 [RequireComponent(typeof(NavMeshAgent))]
 public class DogCome : MonoBehaviour
@@ -27,9 +31,6 @@ public class DogCome : MonoBehaviour
     [SerializeField] private DogFetch dogFetch; // 선택 사항 (공 가져오기와 동시 실행 방지용)
     [SerializeField] private DogEat dogEat;     // 선택 사항 (간식 먹기와 동시 실행 방지용)
     [SerializeField] private NavMeshAgent agent; // 비우면 이 오브젝트에서 자동으로 찾음
-
-    [Header("입력")]
-    [SerializeField] private OVRInput.Button comeButton = OVRInput.Button.Two; // 오른쪽 컨트롤러 B버튼
 
     [Header("거리 판정")]
     [SerializeField] private float arriveDistance = 1f;
@@ -69,7 +70,8 @@ public class DogCome : MonoBehaviour
         {
             bool fetchBusy = dogFetch != null && dogFetch.IsBusy;
             bool eatBusy = dogEat != null && dogEat.IsBusy;
-            if (!fetchBusy && !eatBusy && target != null && OVRInput.GetDown(comeButton))
+            bool upArrowPressed = Keyboard.current != null && Keyboard.current.upArrowKey.wasPressedThisFrame;
+            if (!fetchBusy && !eatBusy && target != null && upArrowPressed)
             {
                 state = State.Coming;
                 agent.isStopped = false;
